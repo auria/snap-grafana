@@ -1,5 +1,5 @@
 language: bash
-dist: xenial
+dist: bionic
 sudo: required
 
 env:
@@ -24,7 +24,7 @@ before_install:
   - sudo /snap/bin/lxd init --auto
 
 script:
-  - sudo snapcraft --use-lxd
+  - snapcraft --use-lxd
 
 after_success:
   - sudo snap install *.snap --dangerous
