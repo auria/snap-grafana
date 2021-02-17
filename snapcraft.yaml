@@ -67,6 +67,6 @@ parts:
       NODE_ENV="production"
       npm install -g --prefix $SNAPCRAFT_PART_INSTALL yarn
       yarn install --pure-lockfile --no-progress
-      ${SNAPCRAFT_PART_BUILD}/node_modules/.bin/grunt build
+      yarn build
       cp -rf public ${SNAPCRAFT_PART_INSTALL}/public
       cp -rf tools ${SNAPCRAFT_PART_INSTALL}/tools
