@@ -1,8 +1,10 @@
+**DEPRECATED, PLEASE VISIT https://launchpad.net/grafana-snap**
+
 # snap recipe for grafana
 
 ## Building and Installing
 
-1. get the recipe `git clone https://github.com/CanonicalBootStack/snap-grafana`
-2. `cd snap-grafana`
-3. `snapcraft build`
-4. `sudo snap install grafana_6.2.1*.snap --dangerous`
+1. get the recipe `git clone https://git.launchpad.net/grafana-snap `
+2. `cd grafana-snap`
+3. `snapcraft --use-lxd`
+4. `sudo snap install grafana_6.2.1*.snap --devmode`
